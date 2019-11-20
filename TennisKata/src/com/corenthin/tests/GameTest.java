@@ -2,6 +2,8 @@ package com.corenthin.tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.stream.IntStream;
+
 import org.junit.*;
 
 import com.corenthin.tennis.Game;
@@ -30,4 +32,20 @@ public class GameTest {
         player1.winPoint();
         assertEquals("fifteen, love", game.getScore());
     }
+    
+    @Test
+    public void scoreDescriptionForTwoPointsWon() {
+        player1.winPoint();
+        player1.winPoint();
+        assertEquals("thirty, love", game.getScore());
+    }
+    
+    @Test
+    public void scoreDescriptionForThreePointsWon() {
+    	for (int index = 0;index < 3;index++) {
+    		player1.winPoint();
+    	}
+        assertEquals("forty, love", game.getScore());
+    }
+    
 }
