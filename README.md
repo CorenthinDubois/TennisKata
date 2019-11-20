@@ -29,4 +29,4 @@ The scoring system is rather simple:
 4. If at least three points have been scored by each side and a player has one more point than his opponent, the score of the game is “advantage” for the player in the lead.
 
 ## Compile and Execute
-Run the JUnit test in Eclipse to see the results. Must have JUnit 5 in the build path for the project to work.
+Run the JUnit test in Eclipse or any other working tool to see the results. Must have JUnit 5 in the build path for the project to work.
