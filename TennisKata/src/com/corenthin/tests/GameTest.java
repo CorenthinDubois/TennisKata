@@ -80,4 +80,27 @@ public class GameTest {
         assertEquals("advantage player2", game.getScore());
     }
     
+    @Test
+    public void scoreDescriptionForGameWonByTheFirstPlayerWithTwoPointsDifference1() {
+        for(int index = 0; index < 4; index++) {
+            player1.winPoint();
+        }
+        for(int index = 0; index < 3; index++) {
+            player2.winPoint();
+        }
+        
+        assertNotEquals("player1 wins the game", game.getScore());
+        assertNotEquals("player2 wins the game", game.getScore());
+        player1.winPoint();
+        assertEquals("player1 wins the game", game.getScore());
+    }
+    
+    @Test
+    public void scoreDescriptionForGameWonByTheFirstPlayerWithTwoPointsDifference2() {
+        for(int index = 0; index < 4; index++) {
+            player1.winPoint();
+        }
+        assertEquals("player1 wins the game", game.getScore());
+    }
+    
 }
