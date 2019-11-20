@@ -13,7 +13,7 @@ public class Game {
     }
 
 	/**
-     * Method to display the game score
+     * Method to display the game score.
      *
      * @return current game score
      */
@@ -31,7 +31,7 @@ public class Game {
     }     
     
 	/**
-	 * Method to find the leading player
+	 * Method to find the leading player.
 	 *
 	 * @return Player
 	 */
