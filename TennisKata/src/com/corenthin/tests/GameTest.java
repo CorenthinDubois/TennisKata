@@ -24,4 +24,10 @@ public class GameTest {
     public void scoreDescriptionForNewGame() {
         assertEquals("love, love", game.getScore());
     }
+    
+    @Test
+    public void scoreDescriptionForOnePointWon() {
+        player1.winPoint();
+        assertEquals("fifteen, love", game.getScore());
+    }
 }

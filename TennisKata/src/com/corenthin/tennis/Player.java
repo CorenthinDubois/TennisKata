@@ -25,5 +25,9 @@ public class Player {
     public String getScoreDescription(){
         return pointsDescription.get(gameScore);
     }
+    
+	public void winPoint() {
+		this.gameScore++;
+	}
 
 }
